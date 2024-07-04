@@ -1,5 +1,20 @@
 <div style="background-color: red;">
+
     <p>account works!</p>
+    <pre>
+        In this demo, we have 3 component.
+        1 Parent - Account component
+        2 child component - Chooser and multiplier
+        Chooser component - It has 2 input fields, one for name and another for times.  
+                        - The fields are binded with 2 way binding.
+        Multiplier component - It has 2 input fields, one for name and another for times.
+                        - The fields are binded with 1 way binding.
+        Account component - It has 2 fields, one for name and another for times.
+                        -The component's field don't have any binding with its parent (app-component)
+
+        Flow:
+            - When you change input on chooser component, it will reflect on multiplier component.
+    </pre>
     {{times}} - {{name}}
 </div>
 
