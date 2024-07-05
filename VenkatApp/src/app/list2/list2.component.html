@@ -1,0 +1,13 @@
+<div style="background-color: cornflowerblue;">
+    <p>list2 works!</p>
+
+
+    <div *ngFor="let value of transactions; index as i; first as isFirst">{{value}}
+        <button (click)="deleteTransaction(i)">Delete</button>
+    </div>
+    
+    <input type="text" [(ngModel)]="transaction">
+    <button (click)="addTransaction()">Add</button>
+
+    <app-alert [indToDelete]="indToDelete" (onDeleteConfirm)="removeFromUI($event)"></app-alert>
+</div>
