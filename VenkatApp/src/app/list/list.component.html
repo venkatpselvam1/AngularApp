@@ -1,0 +1,11 @@
+<div style="background-color: cornflowerblue;">
+    <p>list works!</p>
+
+
+    <div *ngFor="let value of transactions; index as i; first as isFirst">{{value}}
+        <button (click)="deleteTransaction(i)">Delete</button>
+    </div>
+    
+    <input type="text" [(ngModel)]="transaction">
+    <button (click)="addTransaction()">Add</button>
+</div>
